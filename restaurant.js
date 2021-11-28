@@ -4,7 +4,7 @@ module.exports = {
 		plan: "pro", //potrebbe anche essere un codice
 		name: "la bocca di bacco",
 		address: "via della bottega",
-		addressNum: 22,
+		number: 22,
 		city: "bologna",
 		short: "bo",
 		zipcode: "40100",
