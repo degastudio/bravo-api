@@ -1,25 +1,10 @@
 const express = require("express");
-const categories = require("./categories");
+const restaurant = require("./restaurant");
 
 const app = express();
 
 app.get("/", (req, res) => {
-	res.json(categories);
-});
-
-app.get("/item/:id", async (req, res) => {
-	let detail = {};
-
-	categories.forEach(category => {
-		category.items.forEach(item => {
-			if (item.id === Number(req.params.id)) {
-				detail = item;
-				return;
-			}
-		});
-	});
-
-	res.json(detail);
+	res.json(restaurant);
 });
 
 const d = new Date();
