@@ -8,6 +8,7 @@ module.exports = {
 		city: "bologna",
 		short: "bo",
 		zipcode: "40100",
+		banner: "/imgs/ristorante.jpg", //dovrebbe essere l'immagine in base64
 	},
 	menus: [
 		{
