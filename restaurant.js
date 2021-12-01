@@ -172,7 +172,7 @@ module.exports = {
 								"Classica ricetta per cucinare la carne di vitello. Un secondo piatto di carne leggero ma gustoso e che mette d'accordo tutta la famiglia",
 							ingredients: {
 								leadings: [
-									{ name: "carne di vitello", frozen: false },
+									{ name: "carne di vitello", frozen: true },
 									{ name: "farina", frozen: false },
 									{ name: "olio d'oliva", frozen: false },
 									{ name: "burro", frozen: false },
