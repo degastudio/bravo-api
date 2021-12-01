@@ -22,7 +22,7 @@ module.exports = {
 						{
 							id: 1,
 							name: "zucchine in primavera",
-							price: "7,00",
+							price: 7.0,
 							img: "/imgs/dishes/zucchine.jpg",
 							people: 2,
 							description:
@@ -50,7 +50,7 @@ module.exports = {
 						{
 							id: 2,
 							name: "cheddar",
-							price: "6,20",
+							price: 6.2,
 							img: "/imgs/dishes/cheddar.jpg",
 							people: 2,
 							description:
@@ -76,7 +76,7 @@ module.exports = {
 						{
 							id: 3,
 							name: "spaghetti alla puttanesca",
-							price: "9,50",
+							price: 9.5,
 							img: "/imgs/dishes/puttanesca.jpg",
 							people: 1,
 							timerange: { min: 12, max: 20 },
@@ -103,7 +103,7 @@ module.exports = {
 						{
 							id: 4,
 							name: "patate ripiene del conte",
-							price: "12,00",
+							price: 12.0,
 							img: "/imgs/dishes/potato-skins.jpg",
 							people: 2,
 							timerange: { min: 18, max: 30 },
@@ -125,7 +125,7 @@ module.exports = {
 						{
 							id: 5,
 							name: "risotto alla viareggina",
-							price: "10,54",
+							price: 10.54,
 							img: "/imgs/dishes/risotto-viareggina.jpg",
 							people: 2,
 							timerange: { min: 16, max: 24 },
@@ -164,7 +164,7 @@ module.exports = {
 						{
 							id: 6,
 							name: "scaloppine al limone",
-							price: "7,00",
+							price: 7.0,
 							img: "/imgs/dishes/scaloppine.jpg",
 							people: 1,
 							timerange: { min: 8, max: 12 },
@@ -190,7 +190,7 @@ module.exports = {
 						{
 							id: 7,
 							name: "rollè di melanzana",
-							price: "8,20",
+							price: 8.2,
 							img: "/imgs/dishes/melanzane.jpg",
 							people: 1,
 							timerange: { min: 10, max: 15 },
@@ -305,7 +305,7 @@ module.exports = {
 						{
 							id: 9,
 							name: "pizza capricciosa",
-							price: "6,50",
+							price: 6.5,
 							img: "/imgs/dishes/pizza-capricciosa.jpg",
 							people: 1,
 							freezed: true,
@@ -329,7 +329,7 @@ module.exports = {
 						{
 							id: 10,
 							name: "pizza crudaiola",
-							price: "5,50",
+							price: 5.5,
 							img: "/imgs/dishes/crudaiola.jpg",
 							people: 1,
 							freezed: false,
@@ -352,7 +352,7 @@ module.exports = {
 						{
 							id: 11,
 							name: "pizza ai quattro formaggi",
-							price: "6,00",
+							price: 6.0,
 							img: "/imgs/dishes/4-formaggi.jpg",
 							people: 1,
 							freezed: false,
@@ -381,7 +381,7 @@ module.exports = {
 						{
 							id: 12,
 							name: "tagliata di vitello",
-							price: "14,00",
+							price: 14.0,
 							img: "/imgs/dishes/carni.jpg",
 							people: 4,
 							timerange: { min: 12, max: 20 },
