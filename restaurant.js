@@ -8,7 +8,7 @@ module.exports = {
 		city: "bologna",
 		short: "bo",
 		zipcode: "40100",
-		banner: "/imgs/ristorante.jpg", //dovrebbe essere l'immagine in base64
+		banner: "/imgs/ristorante.jpg", //immagine in base64
 	},
 	menus: [
 		{
@@ -27,11 +27,24 @@ module.exports = {
 							people: 2,
 							description:
 								"Antipasti leggeri ma gustosi con ingredienti semplici",
-							ingredients: [
-								"zucchine",
-								"prosciutto cotto",
-								"formaggio philadelphia",
-							],
+							ingredients: {
+								leadings: [
+									{
+										name: "zucchine",
+										frozen: false,
+									},
+									{
+										name: "prosciutto cotto",
+										frozen: false,
+									},
+									{
+										name: "formaggio philadelphia",
+										frozen: false,
+									},
+								],
+								replacements: [],
+								optionals: [],
+							},
 							allergens: ["latte"],
 						},
 						{
@@ -42,7 +55,16 @@ module.exports = {
 							people: 2,
 							description:
 								"Il Cheddar è un tipico formaggio di origine inglese dal sapore deciso e ricco di tradizione",
-							ingredients: ["formaggio stagionato"],
+							ingredients: {
+								leadings: [
+									{
+										name: "formaggio stagionato",
+										frozen: false,
+									},
+								],
+								replacements: [],
+								optionals: [],
+							},
 							allergens: ["latte"],
 						},
 					],
@@ -60,15 +82,22 @@ module.exports = {
 							timerange: { min: 12, max: 20 },
 							description:
 								"Gli spaghetti alla puttanesca sono un primo piatto tipico della cucina napoletana, detto anche semplicemente aulive e chiapparielle",
-							ingredients: [
-								"pasta",
-								"sugo a base di pomodoro",
-								"olive nere",
-								"aglio",
-								"olio d'oliva",
-								"capperi",
-								"origano",
-							],
+							ingredients: {
+								leadings: [
+									{ name: "pasta", frozen: false },
+									{
+										name: "sugo a base di pomodoro",
+										frozen: false,
+									},
+									{ name: "olive nere", frozen: false },
+									{ name: "aglio", frozen: false },
+									{ name: "olio d'oliva", frozen: false },
+									{ name: "capperi", frozen: false },
+									{ name: "origano", frozen: false },
+								],
+								replacements: [],
+								optionals: [],
+							},
 							allergens: ["glutine", "uova", "solfiti"],
 						},
 						{
@@ -80,13 +109,17 @@ module.exports = {
 							timerange: { min: 18, max: 30 },
 							description:
 								"Le patate ripiene sono un antica ricetta di contadini che fa uso di elementi semplici e tramandata da generazioni",
-							ingredients: [
-								"patate",
-								"formaggio fuso",
-								"pomodoro",
-								"pancetta",
-								"olio santo",
-							],
+							ingredients: {
+								leadings: [
+									{ name: "patate", frozen: false },
+									{ name: "formaggio fuso", frozen: false },
+									{ name: "pomodoro", frozen: false },
+									{ name: "pancetta", frozen: false },
+									{ name: "olio", frozen: false },
+								],
+								replacements: [],
+								optionals: [],
+							},
 							allergens: ["latte", "uova"],
 						},
 						{
@@ -99,17 +132,21 @@ module.exports = {
 							freezed: true,
 							description:
 								"Risotto a base di frutti di mare fatto con tutta l'antica tradizione di Viareggio in Toscana",
-							ingredients: [
-								"riso ribe",
-								"pomodoro",
-								"olio d'oliva",
-								"prezzemolo",
-								"calamari",
-								"totani",
-								"gamberetti",
-								"aglio",
-								"peperoncino",
-							],
+							ingredients: {
+								leadings: [
+									{ name: "riso ribe", frozen: false },
+									{ name: "pomodoro", frozen: false },
+									{ name: "olio d'oliva", frozen: false },
+									{ name: "prezzemolo", frozen: false },
+									{ name: "calamari", frozen: false },
+									{ name: "totani", frozen: false },
+									{ name: "gamberetti", frozen: false },
+									{ name: "aglio", frozen: false },
+									{ name: "peperoncino", frozen: false },
+								],
+								replacements: [],
+								optionals: [],
+							},
 							allergens: [
 								"molluschi",
 								"crostacei",
@@ -133,17 +170,21 @@ module.exports = {
 							timerange: { min: 8, max: 12 },
 							description:
 								"Classica ricetta per cucinare la carne di vitello. Un secondo piatto di carne leggero ma gustoso e che mette d'accordo tutta la famiglia",
-							ingredients: [
-								"carne di vitello",
-								"farina",
-								"olio d'oliva",
-								"burro",
-								"sale",
-								"aglio",
-								"limone",
-								"pepe nero",
-								"prezzemolo",
-							],
+							ingredients: {
+								leadings: [
+									{ name: "carne di vitello", frozen: false },
+									{ name: "farina", frozen: false },
+									{ name: "olio d'oliva", frozen: false },
+									{ name: "burro", frozen: false },
+									{ name: "sale", frozen: false },
+									{ name: "aglio", frozen: false },
+									{ name: "limone", frozen: false },
+									{ name: "pepe nero", frozen: false },
+									{ name: "prezzemolo", frozen: false },
+								],
+								replacements: [],
+								optionals: [],
+							},
 							allergens: ["glutine, latte"],
 						},
 						{
@@ -155,13 +196,17 @@ module.exports = {
 							timerange: { min: 10, max: 15 },
 							description:
 								"Le melanzane sono uno degli ortaggi più amati dell’estate ed adatte anche ai vegani",
-							ingredients: [
-								"melanzana",
-								"pomodoro",
-								"formaggio",
-								"olio d'oliva",
-								"sale",
-							],
+							ingredients: {
+								leadings: [
+									{ name: "melanzana", frozen: false },
+									{ name: "pomodoro", frozen: false },
+									{ name: "formaggio", frozen: false },
+									{ name: "olio d'oliva", frozen: false },
+									{ name: "sale", frozen: false },
+								],
+								replacements: [],
+								optionals: [],
+							},
 							allergens: ["solfiti"],
 						},
 					],
@@ -184,12 +229,10 @@ module.exports = {
 									{
 										name: "salsa pomodoro",
 										frozen: false,
-										gfree: false,
 									},
 									{
 										name: "mozzarella",
 										frozen: false,
-										gfree: false,
 									},
 								],
 								replacements: [
@@ -199,31 +242,26 @@ module.exports = {
 											{
 												name: "farina di kamut",
 												frozen: false,
-												gfree: false,
 												price: 1.5,
 											},
 											{
 												name: "farina ai cereali",
 												frozen: false,
-												gfree: false,
 												price: 1.6,
 											},
 											{
 												name: "farina di canapa",
 												frozen: false,
-												gfree: false,
 												price: 1.5,
 											},
 											{
 												name: "farina di farro",
 												frozen: false,
-												gfree: false,
 												price: 1.4,
 											},
 											{
 												name: "farina senza glutine",
 												frozen: false,
-												gfree: true,
 												price: 1.8,
 											},
 										],
@@ -233,37 +271,31 @@ module.exports = {
 									{
 										name: "wusterls",
 										frozen: false,
-										gfree: false,
 										price: 1.0,
 									},
 									{
 										name: "prosciutto crudo",
 										frozen: false,
-										gfree: false,
 										price: 1.8,
 									},
 									{
 										name: "prosciutto cotto",
 										frozen: false,
-										gfree: false,
 										price: 1.5,
 									},
 									{
 										name: "rucola",
 										frozen: false,
-										gfree: false,
 										price: 1.0,
 									},
 									{
 										name: "speck",
 										frozen: false,
-										gfree: false,
 										price: 2.5,
 									},
 									{
 										name: "foglie di basilico",
 										frozen: false,
-										gfree: false,
 										price: 0.8,
 									},
 								],
@@ -280,14 +312,18 @@ module.exports = {
 							timerange: { min: 10, max: 15 },
 							description:
 								"La pizza capricciosa è una pizza tipica della cucina italiana",
-							ingredients: [
-								"salsa pomodoro",
-								"mozzarella",
-								"prosciutto cotto",
-								"funghi",
-								"olive",
-								"carciofini",
-							],
+							ingredients: {
+								leadings: [
+									{ name: "salsa pomodoro", frozen: false },
+									{ name: "mozzarella", frozen: false },
+									{ name: "prosciutto cotto", frozen: false },
+									{ name: "funghi", frozen: false },
+									{ name: "olive", frozen: false },
+									{ name: "carciofini", frozen: false },
+								],
+								replacements: [],
+								optionals: [],
+							},
 							allergens: ["glutine, latte", "solfiti"],
 						},
 						{
@@ -300,13 +336,17 @@ module.exports = {
 							timerange: { min: 8, max: 13 },
 							description:
 								"La pizza crudaiola è una pizza con sapori della natura italiana ",
-							ingredients: [
-								"salsa pomodoro",
-								"mozzarella",
-								"grana a scaglie",
-								"rucola",
-								"pomodorini",
-							],
+							ingredients: {
+								leadings: [
+									{ name: "salsa pomodoro", frozen: false },
+									{ name: "mozzarella", frozen: false },
+									{ name: "grana a scaglie", frozen: false },
+									{ name: "rucola", frozen: false },
+									{ name: "pomodorini", frozen: false },
+								],
+								replacements: [],
+								optionals: [],
+							},
 							allergens: ["glutine"],
 						},
 						{
@@ -319,13 +359,17 @@ module.exports = {
 							timerange: { min: 10, max: 16 },
 							description:
 								"La pizza ai quattro formaggi è una pizza con sapori tipici della cucina italiana",
-							ingredients: [
-								"mozzarella",
-								"grana",
-								"gorgonzola",
-								"mascarpone",
-								"briè",
-							],
+							ingredients: {
+								leadings: [
+									{ name: "mozzarella", frozen: false },
+									{ name: "grana", frozen: false },
+									{ name: "gorgonzola", frozen: false },
+									{ name: "mascarpone", frozen: false },
+									{ name: "briè", frozen: false },
+								],
+								replacements: [],
+								optionals: [],
+							},
 							allergens: ["glutine", "latte"],
 						},
 					],
@@ -343,13 +387,17 @@ module.exports = {
 							timerange: { min: 12, max: 20 },
 							description:
 								"Pizza semplice e gustosa tipica della tradizione italiana e simbolo in tutto il mondo",
-							ingredients: [
-								"carne",
-								"rosmarino",
-								"patate",
-								"sale",
-								"olio",
-							],
+							ingredients: {
+								leadings: [
+									{ name: "carne", frozen: false },
+									{ name: "rosmarino", frozen: false },
+									{ name: "patate", frozen: false },
+									{ name: "sale", frozen: false },
+									{ name: "olio", frozen: false },
+								],
+								replacements: [],
+								optionals: [],
+							},
 							allergens: [],
 						},
 					],
