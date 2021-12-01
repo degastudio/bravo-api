@@ -173,17 +173,101 @@ module.exports = {
 						{
 							id: 8,
 							name: "pizza margherita",
-							price: "4,00",
+							price: 4.0,
 							img: "/imgs/dishes/pizza-margherita.jpg",
 							people: 1,
 							timerange: { min: 10, max: 15 },
 							description:
 								"Pizza semplice e gustosa tipica della tradizione italiana e simbolo in tutto il mondo",
-							ingredients: [
-								"salsa pomodoro",
-								"mozzarella",
-								"foglie di basilico",
-							],
+							ingredients: {
+								leadings: [
+									{
+										name: "salsa pomodoro",
+										frozen: false,
+										gfree: false,
+									},
+									{
+										name: "mozzarella",
+										frozen: false,
+										gfree: false,
+									},
+								],
+								replacements: [
+									{
+										name: "farina",
+										alternatives: [
+											{
+												name: "farina di kamut",
+												frozen: false,
+												gfree: false,
+												price: 1.5,
+											},
+											{
+												name: "farina ai cereali",
+												frozen: false,
+												gfree: false,
+												price: 1.6,
+											},
+											{
+												name: "farina di canapa",
+												frozen: false,
+												gfree: false,
+												price: 1.5,
+											},
+											{
+												name: "farina di farro",
+												frozen: false,
+												gfree: false,
+												price: 1.4,
+											},
+											{
+												name: "farina senza glutine",
+												frozen: false,
+												gfree: true,
+												price: 1.8,
+											},
+										],
+									},
+								],
+								optionals: [
+									{
+										name: "wusterls",
+										frozen: false,
+										gfree: false,
+										price: 1.0,
+									},
+									{
+										name: "prosciutto crudo",
+										frozen: false,
+										gfree: false,
+										price: 1.8,
+									},
+									{
+										name: "prosciutto cotto",
+										frozen: false,
+										gfree: false,
+										price: 1.5,
+									},
+									{
+										name: "rucola",
+										frozen: false,
+										gfree: false,
+										price: 1.0,
+									},
+									{
+										name: "speck",
+										frozen: false,
+										gfree: false,
+										price: 2.5,
+									},
+									{
+										name: "foglie di basilico",
+										frozen: false,
+										gfree: false,
+										price: 0.8,
+									},
+								],
+							},
 							allergens: ["glutine, latte"],
 						},
 						{
