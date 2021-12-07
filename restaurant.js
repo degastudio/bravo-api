@@ -117,7 +117,40 @@ module.exports = {
 									{ name: "pancetta", frozen: false },
 									{ name: "olio", frozen: false },
 								],
-								replacements: [],
+								replacements: [
+									{
+										name: "olio",
+										default: "olio d'oliva",
+										alternatives: [
+											{
+												name: "olio d'oliva",
+												frozen: false,
+												price: 0,
+											},
+											{
+												name: "olio piccante",
+												frozen: false,
+												price: 0.6,
+											},
+										],
+									},
+									{
+										name: "formaggio",
+										default: "formaggio svizzero",
+										alternatives: [
+											{
+												name: "formaggio svizzero",
+												frozen: false,
+												price: 0,
+											},
+											{
+												name: "formaggio stagionato",
+												frozen: false,
+												price: 0.8,
+											},
+										],
+									},
+								],
 								optionals: [],
 							},
 							allergens: ["latte", "uova"],
@@ -144,7 +177,29 @@ module.exports = {
 									{ name: "aglio", frozen: false },
 									{ name: "peperoncino", frozen: false },
 								],
-								replacements: [],
+								replacements: [
+									{
+										name: "riso",
+										default: "riso ribe",
+										alternatives: [
+											{
+												name: "riso ribe",
+												frozen: false,
+												price: 0,
+											},
+											{
+												name: "riso basmati",
+												frozen: false,
+												price: 0.5,
+											},
+											{
+												name: "riso venere",
+												frozen: false,
+												price: 1.2,
+											},
+										],
+									},
+								],
 								optionals: [],
 							},
 							allergens: [
@@ -237,6 +292,7 @@ module.exports = {
 								],
 								replacements: [
 									{
+										name: "farina",
 										default: "farina tipo 0",
 										alternatives: [
 											{
