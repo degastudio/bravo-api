@@ -237,8 +237,13 @@ module.exports = {
 								],
 								replacements: [
 									{
-										name: "farina",
+										default: "farina tipo 0",
 										alternatives: [
+											{
+												name: "farina tipo 0",
+												frozen: false,
+												price: 0,
+											},
 											{
 												name: "farina di kamut",
 												frozen: false,
@@ -263,6 +268,27 @@ module.exports = {
 												name: "farina senza glutine",
 												frozen: false,
 												price: 1.8,
+											},
+										],
+									},
+									{
+										name: "salsa pomodoro",
+										default: "salsa pomodoro",
+										alternatives: [
+											{
+												name: "salsa pomodoro",
+												frozen: false,
+												price: 0,
+											},
+											{
+												name: "pomodoro datterino",
+												frozen: false,
+												price: 1.6,
+											},
+											{
+												name: "passata pomodoro",
+												frozen: true,
+												price: 0.5,
 											},
 										],
 									},
@@ -321,7 +347,60 @@ module.exports = {
 									{ name: "olive", frozen: false },
 									{ name: "carciofini", frozen: false },
 								],
-								replacements: [],
+								replacements: [
+									{
+										name: "farina",
+										default: "farina tipo 0",
+										alternatives: [
+											{
+												name: "farina tipo 0",
+												frozen: false,
+												price: 0,
+											},
+											{
+												name: "farina di kamut",
+												frozen: false,
+												price: 1.5,
+											},
+											{
+												name: "farina ai cereali",
+												frozen: false,
+												price: 1.6,
+											},
+											{
+												name: "farina di canapa",
+												frozen: false,
+												price: 1.5,
+											},
+											{
+												name: "farina di farro",
+												frozen: false,
+												price: 1.4,
+											},
+											{
+												name: "farina senza glutine",
+												frozen: false,
+												price: 1.8,
+											},
+										],
+									},
+									{
+										name: "salsa pomodoro",
+										default: "salsa pomodoro",
+										alternatives: [
+											{
+												name: "salsa pomodoro",
+												frozen: false,
+												price: 0,
+											},
+											{
+												name: "pomodoro datterino",
+												frozen: false,
+												price: 1.6,
+											},
+										],
+									},
+								],
 								optionals: [],
 							},
 							allergens: ["glutine, latte", "solfiti"],
@@ -344,10 +423,74 @@ module.exports = {
 									{ name: "rucola", frozen: false },
 									{ name: "pomodorini", frozen: false },
 								],
-								replacements: [],
-								optionals: [],
+								replacements: [
+									{
+										name: "farina",
+										default: "farina tipo 0",
+										alternatives: [
+											{
+												name: "farina tipo 0",
+												frozen: false,
+												price: 0,
+											},
+											{
+												name: "farina di farro",
+												frozen: false,
+												price: 1.4,
+											},
+											{
+												name: "farina senza glutine",
+												frozen: false,
+												price: 1.8,
+											},
+										],
+									},
+									{
+										name: "pomodorini",
+										default: "pomodorini",
+										alternatives: [
+											{
+												name: "pomodorini",
+												frozen: false,
+												price: 0,
+											},
+											{
+												name: "pomodoro datterino",
+												frozen: false,
+												price: 1.7,
+											},
+											{
+												name: "pomodoro ciliegino",
+												frozen: false,
+												price: 1.5,
+											},
+											{
+												name: "pomodoro san marzano",
+												frozen: false,
+												price: 1.5,
+											},
+										],
+									},
+								],
+								optionals: [
+									{
+										name: "wusterls",
+										frozen: false,
+										price: 1.0,
+									},
+									{
+										name: "prosciutto crudo",
+										frozen: false,
+										price: 1.8,
+									},
+									{
+										name: "prosciutto cotto",
+										frozen: false,
+										price: 1.5,
+									},
+								],
 							},
-							allergens: ["glutine"],
+							allergens: ["glutine", "latte"],
 						},
 						{
 							id: 11,
@@ -367,8 +510,62 @@ module.exports = {
 									{ name: "mascarpone", frozen: false },
 									{ name: "briè", frozen: false },
 								],
-								replacements: [],
-								optionals: [],
+								replacements: [
+									{
+										name: "farina",
+										default: "farina tipo 0",
+										alternatives: [
+											{
+												name: "farina tipo 0",
+												frozen: false,
+												price: 0,
+											},
+											{
+												name: "farina di farro",
+												frozen: false,
+												price: 1.4,
+											},
+											{
+												name: "farina senza glutine",
+												frozen: false,
+												price: 1.8,
+											},
+										],
+									},
+									{
+										name: "gorgonzola",
+										default: "gorgonzola",
+										alternatives: [
+											{
+												name: "gorgonzola",
+												frozen: false,
+												price: 0,
+											},
+											{
+												name: "stracciatella",
+												frozen: false,
+												price: 1.5,
+											},
+											{
+												name: "burratina",
+												frozen: false,
+												price: 2.3,
+											},
+										],
+									},
+								],
+								optionals: [
+									{
+										name: "wusterls",
+										frozen: false,
+										price: 1.0,
+									},
+									{
+										name: "pomodori secchi",
+										frozen: false,
+										price: 1.8,
+									},
+								],
 							},
 							allergens: ["glutine", "latte"],
 						},
