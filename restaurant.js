@@ -283,7 +283,7 @@ module.exports = {
 								{
 									name: "normale",
 									price: 4,
-									default: false,
+									default: true,
 								},
 								{
 									name: "mini",
@@ -298,7 +298,7 @@ module.exports = {
 								{
 									name: "alla pala (50 cm)",
 									price: 12,
-									default: true,
+									default: false,
 								},
 							],
 							ingredients: {
