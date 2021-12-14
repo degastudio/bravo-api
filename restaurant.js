@@ -290,6 +290,28 @@ module.exports = {
 										frozen: false,
 									},
 								],
+								sizes: [
+									{
+										name: "normale",
+										price: 4,
+										default: true,
+									},
+									{
+										name: "mini",
+										price: 2.5,
+										default: false,
+									},
+									{
+										name: "gigante",
+										price: 7,
+										default: false,
+									},
+									{
+										name: "alla pala (50 cm)",
+										price: 12,
+										default: false,
+									},
+								],
 								replacements: [
 									{
 										name: "farina",
@@ -403,6 +425,28 @@ module.exports = {
 									{ name: "olive", frozen: false },
 									{ name: "carciofini", frozen: false },
 								],
+								sizes: [
+									{
+										name: "normale",
+										price: 6.5,
+										default: true,
+									},
+									{
+										name: "mini",
+										price: 3,
+										default: false,
+									},
+									{
+										name: "gigante",
+										price: 8,
+										default: false,
+									},
+									{
+										name: "alla pala (50 cm)",
+										price: 13,
+										default: false,
+									},
+								],
 								replacements: [
 									{
 										name: "farina",
@@ -479,6 +523,28 @@ module.exports = {
 									{ name: "rucola", frozen: false },
 									{ name: "pomodorini", frozen: false },
 								],
+								sizes: [
+									{
+										name: "normale",
+										price: 5.5,
+										default: true,
+									},
+									{
+										name: "mini",
+										price: 2.5,
+										default: false,
+									},
+									{
+										name: "gigante",
+										price: 7.5,
+										default: false,
+									},
+									{
+										name: "alla pala (50 cm)",
+										price: 12,
+										default: false,
+									},
+								],
 								replacements: [
 									{
 										name: "farina",
@@ -532,7 +598,7 @@ module.exports = {
 									{
 										name: "wusterls",
 										frozen: false,
-										price: 1.0,
+										price: 1,
 									},
 									{
 										name: "prosciutto crudo",
@@ -551,7 +617,7 @@ module.exports = {
 						{
 							id: 11,
 							name: "pizza ai quattro formaggi",
-							price: 6.0,
+							price: 6,
 							img: "/imgs/dishes/4-formaggi.jpg",
 							people: 1,
 							freezed: false,
@@ -565,6 +631,23 @@ module.exports = {
 									{ name: "gorgonzola", frozen: false },
 									{ name: "mascarpone", frozen: false },
 									{ name: "briè", frozen: false },
+								],
+								sizes: [
+									{
+										name: "normale",
+										price: 6,
+										default: true,
+									},
+									{
+										name: "mini",
+										price: 3,
+										default: false,
+									},
+									{
+										name: "gigante",
+										price: 9,
+										default: false,
+									},
 								],
 								replacements: [
 									{
@@ -655,9 +738,9 @@ module.exports = {
 						},
 					],
 				},
+				// { name: "dolci", img: "", items: [] },
 				// { name: "insalate", img: "", items: [] },
 				// { name: "frutta", img: "", items: [] },
-				// { name: "dolci", img: "", items: [] },
 				// { name: "vini", img: "", items: [] },
 				// { name: "amari", img: "", items: [] },
 				// { name: "caffetteria", img: "", items: [] },
