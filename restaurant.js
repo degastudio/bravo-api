@@ -273,12 +273,34 @@ module.exports = {
 						{
 							id: 8,
 							name: "pizza margherita",
-							price: 4.0,
+							price: 4,
 							img: "/imgs/dishes/pizza-margherita.jpg",
 							people: 1,
 							timerange: { min: 10, max: 15 },
 							description:
 								"Pizza semplice e gustosa tipica della tradizione italiana e simbolo in tutto il mondo",
+							sizes: [
+								{
+									name: "normale",
+									price: 4,
+									default: true,
+								},
+								{
+									name: "mini",
+									price: 2.5,
+									default: false,
+								},
+								{
+									name: "gigante",
+									price: 7,
+									default: false,
+								},
+								{
+									name: "alla pala (50 cm)",
+									price: 12,
+									default: false,
+								},
+							],
 							ingredients: {
 								leadings: [
 									{
@@ -288,28 +310,6 @@ module.exports = {
 									{
 										name: "mozzarella",
 										frozen: false,
-									},
-								],
-								sizes: [
-									{
-										name: "normale",
-										price: 4,
-										default: true,
-									},
-									{
-										name: "mini",
-										price: 2.5,
-										default: false,
-									},
-									{
-										name: "gigante",
-										price: 7,
-										default: false,
-									},
-									{
-										name: "alla pala (50 cm)",
-										price: 12,
-										default: false,
 									},
 								],
 								replacements: [
@@ -416,6 +416,28 @@ module.exports = {
 							timerange: { min: 10, max: 15 },
 							description:
 								"La pizza capricciosa è una pizza tipica della cucina italiana",
+							sizes: [
+								{
+									name: "normale",
+									price: 6.5,
+									default: true,
+								},
+								{
+									name: "mini",
+									price: 3,
+									default: false,
+								},
+								{
+									name: "gigante",
+									price: 8,
+									default: false,
+								},
+								{
+									name: "alla pala (50 cm)",
+									price: 13,
+									default: false,
+								},
+							],
 							ingredients: {
 								leadings: [
 									{ name: "salsa pomodoro", frozen: false },
@@ -424,28 +446,6 @@ module.exports = {
 									{ name: "funghi", frozen: false },
 									{ name: "olive", frozen: false },
 									{ name: "carciofini", frozen: false },
-								],
-								sizes: [
-									{
-										name: "normale",
-										price: 6.5,
-										default: true,
-									},
-									{
-										name: "mini",
-										price: 3,
-										default: false,
-									},
-									{
-										name: "gigante",
-										price: 8,
-										default: false,
-									},
-									{
-										name: "alla pala (50 cm)",
-										price: 13,
-										default: false,
-									},
 								],
 								replacements: [
 									{
@@ -515,6 +515,28 @@ module.exports = {
 							timerange: { min: 8, max: 13 },
 							description:
 								"La pizza crudaiola è una pizza con sapori della natura italiana ",
+							sizes: [
+								{
+									name: "normale",
+									price: 5.5,
+									default: true,
+								},
+								{
+									name: "mini",
+									price: 2.5,
+									default: false,
+								},
+								{
+									name: "gigante",
+									price: 7.5,
+									default: false,
+								},
+								{
+									name: "alla pala (50 cm)",
+									price: 12,
+									default: false,
+								},
+							],
 							ingredients: {
 								leadings: [
 									{ name: "salsa pomodoro", frozen: false },
@@ -522,28 +544,6 @@ module.exports = {
 									{ name: "grana a scaglie", frozen: false },
 									{ name: "rucola", frozen: false },
 									{ name: "pomodorini", frozen: false },
-								],
-								sizes: [
-									{
-										name: "normale",
-										price: 5.5,
-										default: true,
-									},
-									{
-										name: "mini",
-										price: 2.5,
-										default: false,
-									},
-									{
-										name: "gigante",
-										price: 7.5,
-										default: false,
-									},
-									{
-										name: "alla pala (50 cm)",
-										price: 12,
-										default: false,
-									},
 								],
 								replacements: [
 									{
@@ -624,6 +624,23 @@ module.exports = {
 							timerange: { min: 10, max: 16 },
 							description:
 								"La pizza ai quattro formaggi è una pizza con sapori tipici della cucina italiana",
+							sizes: [
+								{
+									name: "normale",
+									price: 6,
+									default: true,
+								},
+								{
+									name: "mini",
+									price: 3,
+									default: false,
+								},
+								{
+									name: "gigante",
+									price: 9,
+									default: false,
+								},
+							],
 							ingredients: {
 								leadings: [
 									{ name: "mozzarella", frozen: false },
@@ -631,23 +648,6 @@ module.exports = {
 									{ name: "gorgonzola", frozen: false },
 									{ name: "mascarpone", frozen: false },
 									{ name: "briè", frozen: false },
-								],
-								sizes: [
-									{
-										name: "normale",
-										price: 6,
-										default: true,
-									},
-									{
-										name: "mini",
-										price: 3,
-										default: false,
-									},
-									{
-										name: "gigante",
-										price: 9,
-										default: false,
-									},
 								],
 								replacements: [
 									{
