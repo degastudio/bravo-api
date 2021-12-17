@@ -21,6 +21,7 @@ module.exports = {
 					items: [
 						{
 							id: 1,
+							visible: true,
 							name: "zucchine in primavera",
 							price: 7.0,
 							img: "/imgs/dishes/zucchine.jpg",
@@ -45,10 +46,11 @@ module.exports = {
 								replacements: [],
 								optionals: [],
 							},
-							allergens: ["latte"],
+							allergens: [{ id: 5, name: "latte e derivati" }],
 						},
 						{
 							id: 2,
+							visible: true,
 							name: "cheddar",
 							price: 6.2,
 							img: "/imgs/dishes/cheddar.jpg",
@@ -65,7 +67,7 @@ module.exports = {
 								replacements: [],
 								optionals: [],
 							},
-							allergens: ["latte"],
+							allergens: [{ id: 5, name: "latte e derivati" }],
 						},
 					],
 				},
@@ -75,6 +77,7 @@ module.exports = {
 					items: [
 						{
 							id: 3,
+							visible: true,
 							name: "spaghetti alla puttanesca",
 							price: 9.5,
 							img: "/imgs/dishes/puttanesca.jpg",
@@ -98,10 +101,15 @@ module.exports = {
 								replacements: [],
 								optionals: [],
 							},
-							allergens: ["glutine", "uova", "solfiti"],
+							allergens: [
+								{ id: 4, name: "glutine" },
+								{ id: 13, name: "uova e derivati" },
+								{ id: 1, name: "anidride solforosa e solfiti" },
+							],
 						},
 						{
 							id: 4,
+							visible: true,
 							name: "patate ripiene del conte",
 							price: 12.0,
 							img: "/imgs/dishes/potato-skins.jpg",
@@ -153,10 +161,14 @@ module.exports = {
 								],
 								optionals: [],
 							},
-							allergens: ["latte", "uova"],
+							allergens: [
+								{ id: 5, name: "latte e derivati" },
+								{ id: 13, name: "uova e derivati" },
+							],
 						},
 						{
 							id: 5,
+							visible: true,
 							name: "risotto alla viareggina",
 							price: 10.54,
 							img: "/imgs/dishes/risotto-viareggina.jpg",
@@ -203,11 +215,11 @@ module.exports = {
 								optionals: [],
 							},
 							allergens: [
-								"molluschi",
-								"crostacei",
-								"solfiti",
-								"uova",
-								"frutta a guscio",
+								{ id: 7, name: "molluschi" },
+								{ id: 2, name: "crostacei" },
+								{ id: 13, name: "uova e derivati" },
+								{ id: 3, name: "frutta a guscio" },
+								{ id: 1, name: "anidride solforosa e solfiti" },
 							],
 						},
 					],
@@ -218,6 +230,7 @@ module.exports = {
 					items: [
 						{
 							id: 6,
+							visible: true,
 							name: "scaloppine al limone",
 							price: 7.0,
 							img: "/imgs/dishes/scaloppine.jpg",
@@ -240,10 +253,14 @@ module.exports = {
 								replacements: [],
 								optionals: [],
 							},
-							allergens: ["glutine, latte"],
+							allergens: [
+								{ id: 4, name: "glutine" },
+								{ id: 5, name: "latte e derivati" },
+							],
 						},
 						{
 							id: 7,
+							visible: true,
 							name: "rollè di melanzana",
 							price: 8.2,
 							img: "/imgs/dishes/melanzane.jpg",
@@ -262,7 +279,9 @@ module.exports = {
 								replacements: [],
 								optionals: [],
 							},
-							allergens: ["solfiti"],
+							allergens: [
+								{ id: 1, name: "anidride solforosa e solfiti" },
+							],
 						},
 					],
 				},
@@ -272,6 +291,7 @@ module.exports = {
 					items: [
 						{
 							id: 8,
+							visible: true,
 							name: "pizza margherita",
 							price: 4,
 							img: "/imgs/dishes/pizza-margherita.jpg",
@@ -404,10 +424,14 @@ module.exports = {
 									},
 								],
 							},
-							allergens: ["glutine, latte"],
+							allergens: [
+								{ id: 4, name: "glutine" },
+								{ id: 5, name: "latte e derivati" },
+							],
 						},
 						{
 							id: 9,
+							visible: true,
 							name: "pizza capricciosa",
 							price: 6.5,
 							img: "/imgs/dishes/pizza-capricciosa.jpg",
@@ -503,10 +527,15 @@ module.exports = {
 								],
 								optionals: [],
 							},
-							allergens: ["glutine, latte", "solfiti"],
+							allergens: [
+								{ id: 4, name: "glutine" },
+								{ id: 5, name: "latte e derivati" },
+								{ id: 1, name: "anidride solforosa e solfiti" },
+							],
 						},
 						{
 							id: 10,
+							visible: true,
 							name: "pizza crudaiola",
 							price: 5.5,
 							img: "/imgs/dishes/crudaiola.jpg",
@@ -612,10 +641,14 @@ module.exports = {
 									},
 								],
 							},
-							allergens: ["glutine", "latte"],
+							allergens: [
+								{ id: 4, name: "glutine" },
+								{ id: 5, name: "latte e derivati" },
+							],
 						},
 						{
 							id: 11,
+							visible: true,
 							name: "pizza ai quattro formaggi",
 							price: 6,
 							img: "/imgs/dishes/4-formaggi.jpg",
@@ -706,7 +739,10 @@ module.exports = {
 									},
 								],
 							},
-							allergens: ["glutine", "latte"],
+							allergens: [
+								{ id: 4, name: "glutine" },
+								{ id: 5, name: "latte e derivati" },
+							],
 						},
 					],
 				},
@@ -716,6 +752,7 @@ module.exports = {
 					items: [
 						{
 							id: 12,
+							visible: true,
 							name: "tagliata di vitello",
 							price: 14.0,
 							img: "/imgs/dishes/carni.jpg",
