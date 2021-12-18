@@ -8,7 +8,16 @@ module.exports = {
 		city: "bologna",
 		short: "bo",
 		zipcode: "40100",
-		banner: "/imgs/ristorante.jpg", //immagine in base64
+		banner: "/imgs/ristorante.jpg", //base64
+		hours: [
+			{ day: "lun", hours: "", isOpen: false },
+			{ day: "mar", hours: "12:00 - 23:30", isOpen: true },
+			{ day: "mer", hours: "12:00 - 23:30", isOpen: true },
+			{ day: "gio", hours: "12:00 - 23:30", isOpen: true },
+			{ day: "ven", hours: "12:00 - 23:30", isOpen: true },
+			{ day: "sab", hours: "12:00 - 23:30", isOpen: true },
+			{ day: "dom", hours: "12:00 - 23:30", isOpen: true },
+		],
 	},
 	menus: [
 		{
