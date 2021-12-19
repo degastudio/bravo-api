@@ -763,12 +763,24 @@ module.exports = {
 							id: 12,
 							visible: true,
 							name: "tagliata di vitello",
-							price: 14.0,
+							price: 12,
 							img: "/imgs/dishes/carni.jpg",
 							people: 4,
 							timerange: { min: 12, max: 20 },
 							description:
-								"Pizza semplice e gustosa tipica della tradizione italiana e simbolo in tutto il mondo",
+								"gustosa tagliata tipica della tradizione italiana",
+							sizes: [
+								{
+									name: "per 2 persone",
+									price: 12,
+									default: true,
+								},
+								{
+									name: "per 4 persone",
+									price: 20,
+									default: false,
+								},
+							],
 							ingredients: {
 								leadings: [
 									{ name: "carne", frozen: false },
@@ -782,17 +794,164 @@ module.exports = {
 							},
 							allergens: [],
 						},
+						{
+							id: 13,
+							visible: true,
+							name: "grigliata mista di maiale",
+							price: 10,
+							img: "/imgs/dishes/grigliata-di-carne-maiale.jpg",
+							people: 4,
+							timerange: { min: 12, max: 20 },
+							description:
+								"gustosa grigliata di maiale con profumo di rosmarino",
+							sizes: [
+								{
+									name: "per 2 persone",
+									price: 10,
+									default: true,
+								},
+								{
+									name: "per 4 persone",
+									price: 18,
+									default: false,
+								},
+							],
+							ingredients: {
+								leadings: [
+									{
+										name: "costine di maiale",
+										frozen: false,
+									},
+									{
+										name: "salsicce di maiale",
+										frozen: false,
+									},
+									{
+										name: "spiedini di maiale",
+										frozen: false,
+									},
+									{ name: "rosmarino", frozen: false },
+									{ name: "sale", frozen: false },
+									{ name: "olio", frozen: false },
+								],
+								replacements: [],
+								optionals: [],
+							},
+							allergens: [],
+						},
+						{
+							id: 14,
+							visible: true,
+							name: "churrasco",
+							price: 7.5,
+							img: "/imgs/dishes/churrasco.jpg",
+							people: 1,
+							timerange: { min: 8, max: 12 },
+							description:
+								"ricetta tipica sud americana con carne di manzo",
+							ingredients: {
+								leadings: [
+									{ name: "carne", frozen: false },
+									{ name: "pepe", frozen: false },
+									{ name: "sale", frozen: false },
+									{ name: "olio", frozen: false },
+								],
+								replacements: [],
+								optionals: [],
+							},
+							allergens: [],
+						},
+						{
+							id: 15,
+							visible: true,
+							name: "salsiccia grigliata",
+							price: 6,
+							img: "/imgs/dishes/salsiccia-grigliata.jpg",
+							people: 1,
+							timerange: { min: 6, max: 10 },
+							description:
+								"salsiccia grigliata al profumo di rosmarino, piatto sfizioso e veloce",
+							ingredients: {
+								leadings: [
+									{
+										name: "condino di manzo",
+										frozen: false,
+									},
+									{ name: "pepe", frozen: false },
+									{ name: "sale", frozen: false },
+									{ name: "olio", frozen: false },
+								],
+								replacements: [
+									{
+										name: "carne",
+										default: "carne di maiale",
+										alternatives: [
+											{
+												name: "carne di maiale",
+												frozen: false,
+												price: 0,
+											},
+											{
+												name: "carne di manzo",
+												frozen: false,
+												price: 1,
+											},
+										],
+									},
+								],
+								optionals: [
+									{
+										name: "patatine fritte",
+										frozen: false,
+										price: 0.5,
+									},
+									{
+										name: "patate al forno",
+										frozen: false,
+										price: 1,
+									},
+								],
+							},
+							allergens: [],
+						},
+					],
+				},
+				{
+					name: "vini bianchi",
+					img: "/imgs/dishes/vini-bianchi.jpg",
+					items: [
+						{
+							id: 16,
+							visible: true,
+							name: "carato",
+							price: 13,
+							img: "/imgs/dishes/carato.png",
+							people: 1,
+							description:
+								"bianco dal sapore leggero e sofisticato, servito fra 9 e 12 gradi",
+							sizes: [
+								{
+									name: "75 cl",
+									price: 10,
+									default: true,
+								},
+							],
+							ingredients: {
+								leadings: [{ name: "carne", frozen: false }],
+								replacements: [],
+								optionals: [],
+							},
+							allergens: [],
+						},
 					],
 				},
 				// { name: "dolci", img: "", items: [] },
 				// { name: "insalate", img: "", items: [] },
 				// { name: "frutta", img: "", items: [] },
-				// { name: "vini", img: "", items: [] },
 				// { name: "amari", img: "", items: [] },
 				// { name: "caffetteria", img: "", items: [] },
 				// { name: "bevande", img: "", items: [] },
 				// { name: "aperitivi", img: "", items: [] },
-				// { name: "specialità della casa", img: "", items: [] },
 			],
 		},
 	],
