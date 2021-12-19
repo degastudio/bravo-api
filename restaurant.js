@@ -997,7 +997,7 @@ module.exports = {
 							type: 1,
 							name: "cervaro della sala",
 							price: 13,
-							img: "/imgs/dishes/cervaro.png",
+							img: "/imgs/dishes/cervaro.jpg",
 							description:
 								"bianco dal sapore leggero e sofisticato, servito fra 9 e 12 gradi",
 							sizes: [
@@ -1030,7 +1030,7 @@ module.exports = {
 							type: 1,
 							name: "poliedro",
 							price: 20,
-							img: "/imgs/dishes/poliedro.png",
+							img: "/imgs/dishes/poliedro.jpg",
 							description:
 								"bianco dal sapore succoso, fresco, che racconta il mandarino candito",
 							sizes: [],
@@ -1050,7 +1050,7 @@ module.exports = {
 							type: 1,
 							name: "barton fara",
 							price: 15,
-							img: "/imgs/dishes/fara.png",
+							img: "/imgs/dishes/fara.jpg",
 							description:
 								"bianco fresco, tannino leggero ed elegante",
 							sizes: [],
