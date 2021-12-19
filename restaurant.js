@@ -236,6 +236,54 @@ module.exports = {
 								{ id: 1, name: "anidride solforosa e solfiti" },
 							],
 						},
+						{
+							id: 20,
+							visible: true,
+							type: 0,
+							name: "spaghetti allo scoglio",
+							price: 8.5,
+							img: "/imgs/dishes/spaghetti-mare.jpg",
+							people: 1,
+							timerange: { min: 15, max: 20 },
+							freezed: true,
+							description:
+								"portata gustosa e stuzzicante che racchiude in sé tutto il profumo dei crostacei",
+							ingredients: {
+								leadings: [
+									{ name: "pasta", frozen: false },
+									{
+										name: "pomodoro datterino",
+										frozen: false,
+									},
+									{ name: "olio d'oliva", frozen: false },
+									{ name: "prezzemolo", frozen: false },
+									{ name: "gamberetti", frozen: true },
+								],
+								replacements: [
+									{
+										name: "pasta",
+										default: "spaghetti grano duro",
+										alternatives: [
+											{
+												name: "spaghetti grano duro",
+												frozen: false,
+												price: 0,
+											},
+											{
+												name: "spaghetti senza glutine",
+												frozen: false,
+												price: 1.5,
+											},
+										],
+									},
+								],
+								optionals: [],
+							},
+							allergens: [
+								{ id: 1, name: "anidride solforosa e solfiti" },
+								{ id: 2, name: "crostacei" },
+							],
+						},
 					],
 				},
 				{
@@ -1062,12 +1110,137 @@ module.exports = {
 						},
 					],
 				},
+				{
+					name: "bevande",
+					img: "/imgs/dishes/bibite.jpg",
+					items: [
+						{
+							id: 21,
+							visible: true,
+							type: 1,
+							name: "coca cola",
+							price: 1.2,
+							img: "/imgs/dishes/cocacola.jpg",
+							description:
+								"da sempre è la bevanda dal gusto fresco e inconfondibile",
+							sizes: [
+								{
+									name: "lattina 33cl",
+									price: 1.2,
+									default: true,
+								},
+								{
+									name: "bottiglia 1l",
+									price: 2.4,
+									default: false,
+								},
+								{
+									name: "bottiglia maxi 2l",
+									price: 3.1,
+									default: false,
+								},
+							],
+						},
+						{
+							id: 22,
+							visible: true,
+							type: 1,
+							name: "coca cola zero",
+							price: 1.4,
+							img: "/imgs/dishes/cola-zero.jpg",
+							description:
+								"zero calorie! la versione senza zuccheri dell'iconica bevandae inconfondibile",
+							sizes: [
+								{
+									name: "lattina 33cl",
+									price: 1.4,
+									default: true,
+								},
+								{
+									name: "bottiglia 1l",
+									price: 2.6,
+									default: false,
+								},
+								{
+									name: "bottiglia maxi 2l",
+									price: 3.3,
+									default: false,
+								},
+							],
+						},
+						{
+							id: 23,
+							visible: true,
+							type: 1,
+							name: "fanta orange",
+							price: 0.7,
+							img: "/imgs/dishes/fanta.jpg",
+							description:
+								"bevanda con succo di arance 100% italiane",
+							sizes: [
+								{
+									name: "lattina 33cl",
+									price: 0.7,
+									default: true,
+								},
+								{
+									name: "bottiglia 1l",
+									price: 1.3,
+									default: false,
+								},
+							],
+						},
+						{
+							id: 24,
+							visible: true,
+							type: 1,
+							name: "acqua naturale",
+							price: 0.5,
+							img: "/imgs/dishes/acqua.jpg",
+							description:
+								"fresca dal sapore naturale e dissetante",
+							sizes: [
+								{
+									name: "bottiglia piccola 33cl",
+									price: 0.5,
+									default: true,
+								},
+								{
+									name: "bottiglia 1l",
+									price: 1,
+									default: false,
+								},
+							],
+						},
+						{
+							id: 25,
+							visible: true,
+							type: 1,
+							name: "acqua minerale",
+							price: 0.5,
+							img: "/imgs/dishes/acqua-minerale.jpg",
+							description:
+								"fresca dal sapore frizzante e leggero",
+							sizes: [
+								{
+									name: "bottiglia piccola 33cl",
+									price: 0.5,
+									default: true,
+								},
+								{
+									name: "bottiglia 1l",
+									price: 1,
+									default: false,
+								},
+							],
+						},
+					],
+				},
 				// { name: "dolci", img: "", items: [] },
 				// { name: "insalate", img: "", items: [] },
 				// { name: "frutta", img: "", items: [] },
 				// { name: "amari", img: "", items: [] },
 				// { name: "caffetteria", img: "", items: [] },
-				{ name: "bevande", img: "", items: [] },
 				// { name: "aperitivi", img: "", items: [] },
 			],
 		},
