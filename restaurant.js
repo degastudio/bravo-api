@@ -31,6 +31,7 @@ module.exports = {
 						{
 							id: 1,
 							visible: true,
+							type: 0,
 							name: "zucchine in primavera",
 							price: 7.0,
 							img: "/imgs/dishes/zucchine.jpg",
@@ -60,6 +61,7 @@ module.exports = {
 						{
 							id: 2,
 							visible: true,
+							type: 0,
 							name: "cheddar",
 							price: 6.2,
 							img: "/imgs/dishes/cheddar.jpg",
@@ -87,6 +89,7 @@ module.exports = {
 						{
 							id: 3,
 							visible: true,
+							type: 0,
 							name: "spaghetti alla puttanesca",
 							price: 9.5,
 							img: "/imgs/dishes/puttanesca.jpg",
@@ -119,6 +122,7 @@ module.exports = {
 						{
 							id: 4,
 							visible: true,
+							type: 0,
 							name: "patate ripiene del conte",
 							price: 12.0,
 							img: "/imgs/dishes/potato-skins.jpg",
@@ -178,6 +182,7 @@ module.exports = {
 						{
 							id: 5,
 							visible: true,
+							type: 0,
 							name: "risotto alla viareggina",
 							price: 10.54,
 							img: "/imgs/dishes/risotto-viareggina.jpg",
@@ -240,6 +245,7 @@ module.exports = {
 						{
 							id: 6,
 							visible: true,
+							type: 0,
 							name: "scaloppine al limone",
 							price: 7.0,
 							img: "/imgs/dishes/scaloppine.jpg",
@@ -270,6 +276,7 @@ module.exports = {
 						{
 							id: 7,
 							visible: true,
+							type: 0,
 							name: "rollè di melanzana",
 							price: 8.2,
 							img: "/imgs/dishes/melanzane.jpg",
@@ -301,6 +308,7 @@ module.exports = {
 						{
 							id: 8,
 							visible: true,
+							type: 0,
 							name: "pizza margherita",
 							price: 4,
 							img: "/imgs/dishes/pizza-margherita.jpg",
@@ -441,6 +449,7 @@ module.exports = {
 						{
 							id: 9,
 							visible: true,
+							type: 0,
 							name: "pizza capricciosa",
 							price: 6.5,
 							img: "/imgs/dishes/pizza-capricciosa.jpg",
@@ -545,6 +554,7 @@ module.exports = {
 						{
 							id: 10,
 							visible: true,
+							type: 0,
 							name: "pizza crudaiola",
 							price: 5.5,
 							img: "/imgs/dishes/crudaiola.jpg",
@@ -658,6 +668,7 @@ module.exports = {
 						{
 							id: 11,
 							visible: true,
+							type: 0,
 							name: "pizza ai quattro formaggi",
 							price: 6,
 							img: "/imgs/dishes/4-formaggi.jpg",
@@ -762,6 +773,7 @@ module.exports = {
 						{
 							id: 12,
 							visible: true,
+							type: 0,
 							name: "tagliata di vitello",
 							price: 12,
 							img: "/imgs/dishes/carni.jpg",
@@ -783,20 +795,32 @@ module.exports = {
 							],
 							ingredients: {
 								leadings: [
-									{ name: "carne", frozen: false },
+									{ name: "carne vitello", frozen: false },
 									{ name: "rosmarino", frozen: false },
 									{ name: "patate", frozen: false },
 									{ name: "sale", frozen: false },
 									{ name: "olio", frozen: false },
 								],
 								replacements: [],
-								optionals: [],
+								optionals: [
+									{
+										name: "patatine fritte",
+										frozen: false,
+										price: 0.5,
+									},
+									{
+										name: "patate al forno",
+										frozen: false,
+										price: 1,
+									},
+								],
 							},
 							allergens: [],
 						},
 						{
 							id: 13,
 							visible: true,
+							type: 0,
 							name: "grigliata mista di maiale",
 							price: 10,
 							img: "/imgs/dishes/grigliata-di-carne-maiale.jpg",
@@ -835,13 +859,25 @@ module.exports = {
 									{ name: "olio", frozen: false },
 								],
 								replacements: [],
-								optionals: [],
+								optionals: [
+									{
+										name: "patatine fritte",
+										frozen: false,
+										price: 0.5,
+									},
+									{
+										name: "patate al forno",
+										frozen: false,
+										price: 1,
+									},
+								],
 							},
 							allergens: [],
 						},
 						{
 							id: 14,
 							visible: true,
+							type: 0,
 							name: "churrasco",
 							price: 7.5,
 							img: "/imgs/dishes/churrasco.jpg",
@@ -857,13 +893,25 @@ module.exports = {
 									{ name: "olio", frozen: false },
 								],
 								replacements: [],
-								optionals: [],
+								optionals: [
+									{
+										name: "patatine fritte",
+										frozen: false,
+										price: 0.5,
+									},
+									{
+										name: "patate al forno",
+										frozen: false,
+										price: 1,
+									},
+								],
 							},
 							allergens: [],
 						},
 						{
 							id: 15,
 							visible: true,
+							type: 0,
 							name: "salsiccia grigliata",
 							price: 6,
 							img: "/imgs/dishes/salsiccia-grigliata.jpg",
@@ -884,15 +932,15 @@ module.exports = {
 								replacements: [
 									{
 										name: "carne",
-										default: "carne di maiale",
+										default: "carne di manzo",
 										alternatives: [
 											{
-												name: "carne di maiale",
+												name: "carne di manzo",
 												frozen: false,
 												price: 0,
 											},
 											{
-												name: "carne di manzo",
+												name: "carne di maiale",
 												frozen: false,
 												price: 1,
 											},
@@ -923,23 +971,96 @@ module.exports = {
 						{
 							id: 16,
 							visible: true,
-							name: "carato",
+							type: 1,
+							name: "carato siciliano",
 							price: 13,
 							img: "/imgs/dishes/carato.png",
 							people: 1,
 							description:
+								"bianco dal sapore leggero tipico della sicilia",
+							sizes: [],
+							features: {
+								year: 2014,
+								alcohol: 15,
+								temp: 14,
+								grape: "100% chardonnay",
+								origin: "sicilia",
+								classification: "DOC",
+							},
+							allergens: [
+								{ id: 1, name: "anidride solforosa e solfiti" },
+							],
+						},
+						{
+							id: 17,
+							visible: true,
+							type: 1,
+							name: "cervaro della sala",
+							price: 13,
+							img: "/imgs/dishes/cervaro.png",
+							description:
 								"bianco dal sapore leggero e sofisticato, servito fra 9 e 12 gradi",
 							sizes: [
 								{
-									name: "75 cl",
-									price: 10,
+									name: "normale 75cl",
+									price: 13,
 									default: true,
 								},
+								{
+									name: "magnum 1.5l",
+									price: 25,
+									default: false,
+								},
 							],
-							ingredients: {
-								leadings: [{ name: "carne", frozen: false }],
-								replacements: [],
-								optionals: [],
+							features: {
+								year: 2019,
+								alcohol: 10,
+								temp: 15,
+								grape: "92% chardonnay, 8% crechetto",
+								origin: "umbria",
+								classification: "IGT",
+							},
+							allergens: [
+								{ id: 1, name: "anidride solforosa e solfiti" },
+							],
+						},
+						{
+							id: 18,
+							visible: true,
+							type: 1,
+							name: "poliedro",
+							price: 20,
+							img: "/imgs/dishes/poliedro.png",
+							description:
+								"bianco dal sapore succoso, fresco, che racconta il mandarino candito",
+							sizes: [],
+							specification: {
+								year: 2018,
+								temp: 16,
+								grape: "100% Vespolina",
+								origin: "torino",
+								alcohol: 12,
+								classification: "IGP",
+							},
+							allergens: [],
+						},
+						{
+							id: 19,
+							visible: true,
+							type: 1,
+							name: "barton fara",
+							price: 20,
+							img: "/imgs/dishes/fara.png",
+							description:
+								"bianco fresco, tannino leggero ed elegante",
+							sizes: [],
+							specification: {
+								year: 2016,
+								temp: 12,
+								grape: "70% Nebbiolo, 30% Vespolina",
+								origin: "piemonte",
+								alcohol: 15,
+								classification: "IGT",
 							},
 							allergens: [],
 						},
