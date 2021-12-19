@@ -59,6 +59,73 @@ module.exports = {
 							allergens: [{ id: 5, name: "latte e derivati" }],
 						},
 						{
+							id: 26,
+							visible: true,
+							type: 0,
+							name: "carpaccik di gambero rosa",
+							price: 7.0,
+							img: "/imgs/dishes/carpaccik.png",
+							people: 1,
+							description:
+								"crudo di gambero rosso di sicilia, pesto di pistacchio, mela verde, ananas, pop-corn di gambero",
+							ingredients: {
+								leadings: [
+									{
+										name: "gambero",
+										frozen: false,
+									},
+									{
+										name: "pesto di pistacchio",
+										frozen: false,
+									},
+									{
+										name: "mela verde",
+										frozen: false,
+									},
+									{
+										name: "ananas",
+										frozen: false,
+									},
+								],
+								replacements: [],
+								optionals: [],
+							},
+							allergens: [{ id: 2, name: "crostacei" }],
+						},
+						{
+							id: 27,
+							visible: true,
+							type: 0,
+							name: "pomodoro bugiardo",
+							price: 7.0,
+							img: "/imgs/dishes/pomodoro.jpg",
+							people: 1,
+							description:
+								"ripieno di formaggio, base crostino di pane glassa, estratto di pomodoro",
+							ingredients: {
+								leadings: [
+									{
+										name: "formaggio",
+										frozen: false,
+									},
+									{
+										name: "pane",
+										frozen: false,
+									},
+									{
+										name: "estratto di pomodoro",
+										frozen: false,
+									},
+								],
+								replacements: [],
+								optionals: [],
+							},
+							allergens: [
+								{ id: 4, name: "glutine" },
+								{ id: 5, name: "latte e derivati" },
+							],
+						},
+						{
 							id: 2,
 							visible: true,
 							type: 0,
@@ -1120,7 +1187,7 @@ module.exports = {
 							type: 1,
 							name: "coca cola",
 							price: 1.2,
-							img: "/imgs/dishes/cocacola.jpg",
+							img: "/imgs/dishes/coca-cola.jpg",
 							description:
 								"da sempre è la bevanda dal gusto fresco e inconfondibile",
 							sizes: [
@@ -1149,7 +1216,7 @@ module.exports = {
 							price: 1.4,
 							img: "/imgs/dishes/cola-zero.jpg",
 							description:
-								"zero calorie! la versione senza zuccheri dell'iconica bevandae inconfondibile",
+								"zero calorie! la versione senza zuccheri dell'iconica bevanda",
 							sizes: [
 								{
 									name: "lattina 33cl",
