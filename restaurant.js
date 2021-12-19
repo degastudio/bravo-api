@@ -973,7 +973,7 @@ module.exports = {
 							visible: true,
 							type: 1,
 							name: "carato siciliano",
-							price: 13,
+							price: 14.5,
 							img: "/imgs/dishes/carato.png",
 							people: 1,
 							description:
@@ -982,7 +982,6 @@ module.exports = {
 							feat: {
 								year: 2014,
 								alcohol: 15,
-								temp: 14,
 								grape: "100% chardonnay",
 								origin: "sicilia",
 								classification: "DOC",
@@ -999,7 +998,7 @@ module.exports = {
 							price: 13,
 							img: "/imgs/dishes/cervaro.jpg",
 							description:
-								"bianco dal sapore leggero e sofisticato, servito fra 9 e 12 gradi",
+								"bianco dal sapore leggero e sofisticato, con un sapore di storia della sua terra",
 							sizes: [
 								{
 									name: "normale 75cl",
@@ -1015,7 +1014,6 @@ module.exports = {
 							feat: {
 								year: 2019,
 								alcohol: 10,
-								temp: 15,
 								grape: "92% chardonnay, 8% crechetto",
 								origin: "umbria",
 								classification: "IGT",
@@ -1036,7 +1034,6 @@ module.exports = {
 							sizes: [],
 							feat: {
 								year: 2018,
-								temp: 16,
 								grape: "100% vespolina",
 								origin: "torino",
 								alcohol: 12,
@@ -1056,7 +1053,6 @@ module.exports = {
 							sizes: [],
 							feat: {
 								year: 2016,
-								temp: 12,
 								grape: "70% nebbiolo, 30% nespolina",
 								origin: "piemonte",
 								alcohol: 15,
@@ -1071,7 +1067,7 @@ module.exports = {
 				// { name: "frutta", img: "", items: [] },
 				// { name: "amari", img: "", items: [] },
 				// { name: "caffetteria", img: "", items: [] },
-				// { name: "bevande", img: "", items: [] },
+				{ name: "bevande", img: "", items: [] },
 				// { name: "aperitivi", img: "", items: [] },
 			],
 		},
