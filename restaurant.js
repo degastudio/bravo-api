@@ -979,7 +979,7 @@ module.exports = {
 							description:
 								"bianco dal sapore leggero tipico della sicilia",
 							sizes: [],
-							features: {
+							feat: {
 								year: 2014,
 								alcohol: 15,
 								temp: 14,
@@ -1012,7 +1012,7 @@ module.exports = {
 									default: false,
 								},
 							],
-							features: {
+							feat: {
 								year: 2019,
 								alcohol: 10,
 								temp: 15,
@@ -1034,7 +1034,7 @@ module.exports = {
 							description:
 								"bianco dal sapore succoso, fresco, che racconta il mandarino candito",
 							sizes: [],
-							specification: {
+							feat: {
 								year: 2018,
 								temp: 16,
 								grape: "100% Vespolina",
@@ -1049,12 +1049,12 @@ module.exports = {
 							visible: true,
 							type: 1,
 							name: "barton fara",
-							price: 20,
+							price: 15,
 							img: "/imgs/dishes/fara.png",
 							description:
 								"bianco fresco, tannino leggero ed elegante",
 							sizes: [],
-							specification: {
+							feat: {
 								year: 2016,
 								temp: 12,
 								grape: "70% Nebbiolo, 30% Vespolina",
