@@ -1037,7 +1037,7 @@ module.exports = {
 							feat: {
 								year: 2018,
 								temp: 16,
-								grape: "100% Vespolina",
+								grape: "100% vespolina",
 								origin: "torino",
 								alcohol: 12,
 								classification: "IGP",
@@ -1057,7 +1057,7 @@ module.exports = {
 							feat: {
 								year: 2016,
 								temp: 12,
-								grape: "70% Nebbiolo, 30% Vespolina",
+								grape: "70% nebbiolo, 30% nespolina",
 								origin: "piemonte",
 								alcohol: 15,
 								classification: "IGT",
