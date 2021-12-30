@@ -10,13 +10,18 @@ module.exports = {
 		zipcode: "40100",
 		banner: "/imgs/ristorante.jpg", //base64
 		hours: [
-			{ day: "lun", hours: "", isOpen: false },
-			{ day: "mar", hours: "12:00 - 23:30", isOpen: true },
-			{ day: "mer", hours: "12:00 - 23:30", isOpen: true },
-			{ day: "gio", hours: "12:00 - 23:30", isOpen: true },
-			{ day: "ven", hours: "12:00 - 23:30", isOpen: true },
-			{ day: "sab", hours: "12:00 - 23:30", isOpen: true },
-			{ day: "dom", hours: "12:00 - 23:30", isOpen: true },
+			{ id: 1, day: "lun", hours: "", isOpen: false },
+			{ id: 2, day: "mar", hours: "18:00 - 23:30", isOpen: true },
+			{
+				id: 3,
+				day: "mer",
+				hours: "12:00 - 14:30 / 18:00 - 23:30",
+				isOpen: true,
+			},
+			{ id: 4, day: "gio", hours: "12:00 - 23:30", isOpen: true },
+			{ id: 5, day: "ven", hours: "12:00 - 23:30", isOpen: true },
+			{ id: 6, day: "sab", hours: "12:00 - 23:30", isOpen: true },
+			{ id: 0, day: "dom", hours: "12:00 - 23:30", isOpen: true },
 		],
 	},
 	menus: [
@@ -33,7 +38,7 @@ module.exports = {
 							visible: true,
 							type: 0,
 							name: "zucchine in primavera",
-							price: 7.0,
+							price: 5.8,
 							img: "/imgs/dishes/zucchine.jpg",
 							people: 2,
 							description:
@@ -63,7 +68,7 @@ module.exports = {
 							visible: true,
 							type: 0,
 							name: "carpaccik di gambero rosa",
-							price: 7.0,
+							price: 9.0,
 							img: "/imgs/dishes/carpaccik.png",
 							people: 1,
 							description:
@@ -97,7 +102,7 @@ module.exports = {
 							visible: true,
 							type: 0,
 							name: "pomodoro bugiardo",
-							price: 7.0,
+							price: 5.2,
 							img: "/imgs/dishes/pomodoro.jpg",
 							people: 1,
 							description:
@@ -130,7 +135,7 @@ module.exports = {
 							visible: true,
 							type: 0,
 							name: "cheddar",
-							price: 6.2,
+							price: 4.1,
 							img: "/imgs/dishes/cheddar.jpg",
 							people: 2,
 							description:
@@ -312,7 +317,7 @@ module.exports = {
 							img: "/imgs/dishes/spaghetti-mare.jpg",
 							people: 1,
 							timerange: { min: 15, max: 20 },
-							freezed: true,
+							freezed: false,
 							description:
 								"portata gustosa e stuzzicante che racchiude in sé tutto il profumo dei crostacei",
 							ingredients: {
@@ -1303,7 +1308,54 @@ module.exports = {
 						},
 					],
 				},
-				// { name: "dolci", img: "", items: [] },
+				{
+					name: "dolci",
+					img: "/imgs/dishes/dolci.jpg",
+					items: [
+						{
+							id: 28,
+							visible: true,
+							type: 0,
+							name: "fantasia di cioccolato",
+							price: 4.3,
+							img: "/imgs/dishes/torta-cioccolato.jpg",
+							people: 1,
+							description:
+								"una fantasia tutta da scoprire con il sapore del cioccolato più intenso",
+							ingredients: {
+								leadings: [
+									{
+										name: "cioccolato fondente",
+										frozen: false,
+									},
+									{
+										name: "cannella",
+										frozen: false,
+									},
+									{
+										name: "uova",
+										frozen: false,
+									},
+									{
+										name: "burro",
+										frozen: false,
+									},
+									{
+										name: "latte",
+										frozen: false,
+									},
+									{
+										name: "farina tipo 0",
+										frozen: false,
+									},
+								],
+								replacements: [],
+								optionals: [],
+							},
+							allergens: [{ id: 5, name: "latte e derivati" }],
+						},
+					],
+				},
 				// { name: "insalate", img: "", items: [] },
 				// { name: "frutta", img: "", items: [] },
 				// { name: "amari", img: "", items: [] },
