@@ -30,8 +30,8 @@ module.exports = {
 				id: 3,
 				isOpen: true,
 				hours: {
-					morning: { start: 12.0, end: 14.3 },
-					afternoon: { start: 18.0, end: 23.3 },
+					morning: { start: 12.0, end: null },
+					afternoon: { start: null, end: 23.3 },
 				},
 			},
 			{
