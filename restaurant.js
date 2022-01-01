@@ -10,18 +10,55 @@ module.exports = {
 		zipcode: "40100",
 		banner: "/imgs/ristorante.jpg", //base64
 		hours: [
-			{ id: 1, day: "lun", hours: "", isOpen: false },
-			{ id: 2, day: "mar", hours: "18:00 - 23:30", isOpen: true },
+			{ id: 1, hours: null, isOpen: false }, //lunedì
+			{
+				id: 2,
+				isOpen: true,
+				hours: {
+					morning: null,
+					afternoon: { start: 18.0, end: 23.3 },
+				},
+			},
 			{
 				id: 3,
-				day: "mer",
-				hours: "12:00 - 14:30 / 18:00 - 23:30",
 				isOpen: true,
+				hours: {
+					morning: { start: 12.0, end: 14.3 },
+					afternoon: { start: 18.0, end: 23.3 },
+				},
 			},
-			{ id: 4, day: "gio", hours: "12:00 - 23:30", isOpen: true },
-			{ id: 5, day: "ven", hours: "12:00 - 23:30", isOpen: true },
-			{ id: 6, day: "sab", hours: "12:00 - 23:30", isOpen: true },
-			{ id: 0, day: "dom", hours: "12:00 - 23:30", isOpen: true },
+			{
+				id: 4,
+				isOpen: true,
+				hours: {
+					morning: { start: 12.0, end: 14.3 },
+					afternoon: { start: 18.0, end: 23.3 },
+				},
+			},
+			{
+				id: 5,
+				isOpen: true,
+				hours: {
+					morning: { start: 12.0, end: 14.3 },
+					afternoon: { start: 18.0, end: 23.3 },
+				},
+			},
+			{
+				id: 6,
+				isOpen: true,
+				hours: {
+					morning: { start: 12.0, end: 14.3 },
+					afternoon: { start: 18.0, end: 23.3 },
+				},
+			},
+			{
+				id: 0,
+				isOpen: true,
+				hours: {
+					morning: { start: 12.0, end: 14.3 },
+					afternoon: { start: 18.0, end: 23.3 },
+				},
+			},
 		],
 	},
 	menus: [
