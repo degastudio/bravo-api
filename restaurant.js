@@ -10,7 +10,14 @@ module.exports = {
 		zipcode: "40100",
 		banner: "/imgs/ristorante.jpg", //base64
 		hours: [
-			{ id: 1, hours: null, isOpen: false }, //lunedì
+			{
+				id: 1,
+				hours: {
+					morning: null,
+					afternoon: null,
+				},
+				isOpen: false,
+			}, //lunedì
 			{
 				id: 2,
 				isOpen: true,
